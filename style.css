@@ -1,0 +1,66 @@
+/* Farbkonzept Laqers (maximal 3 Farben)
+   1. Hintergrund:           antiquewhite
+   2. Text, Links, Rahmen:   rgb(62, 9, 154)   (Lila)
+   3. Boxen (Navigation, Footer): rgb(245, 222, 192)   (Beige)
+   Schrift: cursive
+*/
+
+body {
+  background-color: antiquewhite;
+  color: rgb(62, 9, 154);
+  font-family: cursive;
+  font-size: 16px;
+  margin-left: 3cm;
+  margin-right: 3cm;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p, li {
+  font-size: 16px;
+}
+
+nav {
+  background-color: rgb(245, 222, 192);
+  border: 1px solid rgb(62, 9, 154);
+  padding: 8px;
+}
+
+a {
+  color: rgb(62, 9, 154);
+  margin-right: 2ch;
+}
+
+footer {
+  background-color: rgb(245, 222, 192);
+  border: 1px solid rgb(62, 9, 154);
+  padding: 8px;
+  margin-top: 30px;
+}
+
+/* Handy: schmale Bildschirme (z.B. 375px) */
+@media (max-width: 600px) {
+  body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
